@@ -1,0 +1,13 @@
+.hand-container{
+  border: 1px solid #333;
+  padding: 5px;
+  height: 150px;
+  width: 110px;
+  border-radius: .375em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hand-container>.card-container{
+  position: absolute;
+}

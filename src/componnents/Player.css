@@ -1,0 +1,6 @@
+.player-container{
+    display: flex;
+    justify-content: space-between;
+    width: calc(130px * 5);
+    height: calc(5 * 35px + 140px);
+}
