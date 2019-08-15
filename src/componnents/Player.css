@@ -4,3 +4,17 @@
     width: calc(130px * 5);
     height: calc(5 * 35px + 140px);
 }
+.winner-banner{
+    position: absolute;
+    font-weight: bold;
+    font-size: 46px;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: .375em;
+    background: green;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    color: #ebebeb;
+    box-shadow: 6px 8px black;
+}

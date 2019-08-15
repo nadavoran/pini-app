@@ -1,0 +1,10 @@
+.deck-container{
+    position: absolute;
+    top: calc( 50% - 80px);
+    left: 32px;
+    /* transform: translateY(-50%); */
+}
+.deck-container>.card-container{
+    position: absolute;
+    user-select: none;
+}
