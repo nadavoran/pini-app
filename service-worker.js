@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/pini-app/precache-manifest.d5cbcf4478e35da640c2281f5109c806.js"
+  "/pini-app/precache-manifest.b2260565cc83da404bba37f1c15fe628.js"
 );
 
 self.addEventListener('message', (event) => {
