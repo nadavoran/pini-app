@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "861e57fadaa234a56581114213f1fa95",
+    "revision": "dcd376cc8fd8b17d57b330dfb8739796",
     "url": "/pini-app/index.html"
   },
   {
-    "revision": "35730ce1c4a7bfea2d10",
+    "revision": "46e705cc03e2dc2b4c8a",
     "url": "/pini-app/static/css/main.63ccaa2d.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pini-app/static/js/2.5b20e6db.chunk.js"
   },
   {
-    "revision": "35730ce1c4a7bfea2d10",
-    "url": "/pini-app/static/js/main.bb228181.chunk.js"
+    "revision": "46e705cc03e2dc2b4c8a",
+    "url": "/pini-app/static/js/main.f03c4263.chunk.js"
   },
   {
     "revision": "922437a4d392d9559de5",
