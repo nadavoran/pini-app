@@ -1,0 +1,120 @@
+@media (max-height: 500px) {
+  .check-button {
+    top: 10%;
+    /* border-radius: 10px; */
+  }
+}
+@media (max-width: 832px) {
+  body {
+    --card-height: 17vmin;
+    /* --card-width: calc(var(--card-height) * 0.7145);
+    --hand-height: calc(var(--card-height) + 7px);
+    --hand-width: calc(var(--card-width) + 7px);
+    --card-space: calc(var(--card-height) * 0.3125); */
+    font-size: 4vmin;
+  }
+  .hand-result {
+    font-size: 0.45em;
+  }
+  .check-button {
+    height: 10vmin;
+    width: 10vmin;
+    /* border-radius: 10px; */
+  }
+  .small {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: initial;
+    height: auto;
+    font-size: 0.95em;
+    /* line-height: initial; */
+  }
+  .small.bottom {
+    display: none;
+  }
+  .small-number {
+    transform: translateX(4px);
+  }
+  .small-symbol {
+    transform: translateX(-4px);
+  }
+  .middle {
+    align-items: initial;
+    font-size: 2.5em;
+  }
+}
+@media screen and (max-width: 625px) {
+  /* body{
+    --card-height: 60px;
+    --card-width: 43px;
+    --hand-height: 65px;
+    --hand-width: 48px;
+    font-size: 11px;
+  } */
+
+  /* .small{
+      flex-direction: row;
+      width: 100%;
+  } */
+}
+@media (max-width: 580px) {
+  /* @media screen and (max-width: 420px){ */
+  body {
+    --card-height: 21vmin;
+    /* --card-width: calc(var(--card-height) * 0.7145); */
+    --hand-height: calc(var(--card-height) + 2px);
+    --hand-width: calc(var(--card-width) + 2px);
+    /* --card-space: calc(var(--card-height) * 0.3125); */
+    --player-width: calc((var(--hand-width) + 12px) * 5);
+    font-size: 5.5vmin;
+  }
+  .controls-container {
+    display: flex;
+    position: relative;
+    align-self: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 90%;
+    width: 90vw;
+    height: var(--hand-height);
+    margin-left: 10px;
+    margin-bottom: 26px;
+    margin-top: 15px;
+    left: initial;
+  }
+  .hand-container {
+    padding: 3px;
+  }
+  .deck-container {
+    left: 20px;
+  }
+  .check-button {
+    /* top: calc( 50% - 80px); */
+    /* top: calc( 6 * var(--card-space) + (var(--hand-height))); */
+    left: initial;
+    height: 12vw;
+    width: 12vw;
+    right: 20px;
+    border-radius: 10px; 
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .player-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* .small{
+      flex-direction: row;
+      width: 100%;
+  } */
+}
+/* @media screen and (max-width: 350px){
+  body{
+    --card-height: 50px;
+    --card-width: 36px;
+    --hand-height: 52px;
+    --hand-width: 38px;
+    font-size: 9px;
+  }
+} */

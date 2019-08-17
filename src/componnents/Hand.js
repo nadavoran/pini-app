@@ -13,7 +13,7 @@ class Hand extends React.Component {
     }
     componentDidMount(){
     }
-    addCard(card, cardElement, posGoal, forced) {
+    addCard(card, cardElement, posGoal, cardIndex, flip, forced) {
         // let cards = [...this.state.cards];
         if (this.props.hand.addCard(card) || forced) {
             function getCenterX(pos) {
@@ -35,18 +35,27 @@ class Hand extends React.Component {
             }
             cardElement.addEventListener("animationend", onCardMoveEnd);
             // cardElement
+            let flipAnimate = "";
+            let fixSpace = 0.28;
+            if (flip) {
+              flipAnimate = "rotate(180deg)";
+              fixSpace *= -1;
+            } 
             let handPos = this.getPos();
             let x = getCenterX(handPos) - getCenterX(posGoal);
-            let y = getCenterY(handPos) - getCenterY(posGoal) + (35 * (this.cardCount));
-            let timer = Math.max(300, Math.sqrt(x) * 2 + 350);
+            let y =
+              getCenterY(handPos) -
+              getCenterY(posGoal) +
+              posGoal.height * fixSpace * this.cardCount;
+            let timer = Math.max(300, Math.sqrt(Math.abs(y)) * 2 + 350);
             cardElement.style.setProperty("--tran-time", timer + "ms");
-            console.log("tran time changed", timer);
             let clearTimer = window.setTimeout(() => {
                 onCardMoveEnd({ animationName: "trans-animate" })
             }, timer);
             cardElement.classList.add("trans-animate");
-            // cardElement.classList.add("animate");
-            cardElement.style.transform = `translate3d(${x - 2}px, ${y - 2}px, 10px)`;
+                y = y - 0.25 * cardIndex;
+            // cardElement.style.transform = `translate3d(${x - (0.25 * cardIndex)}px, ${y}px, 10px) ${this.props.twoPlayers ? " rotate(180deg)" : ""}`;
+            cardElement.style.transform = `translate3d(${x - 0.25 * cardIndex}px, ${y}px, 10px) ${flipAnimate}`;
             return new Promise((resolve, reject)=>{
                 this.resolve = resolve;
             });
@@ -57,6 +66,9 @@ class Hand extends React.Component {
         this.setState({ 
             cards: []
         });
+    }
+    calcSpace(){
+        return Math.min(window.innerWidth * 0.05, 35);
     }
     get cardCount(){
         return this.state.cards.length;
@@ -75,7 +87,7 @@ class Hand extends React.Component {
         }
         return <div ref={(r) => this.hand = r} style={style} className="hand-container">
             {this.state.cards.map((card, index)=>{
-                let transform = `translateY(${35 * index}px`;
+                let transform = `translateY(${28 * index}%)`;
                 let visible = this.props.visibleLastCard || index < 4;
                 return <Card card={card} key={card.toString() + index} index={index} value={card.valueString} type={card.typeString} style={{ transform }} visible={visible} />
             })}

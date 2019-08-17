@@ -1,8 +1,15 @@
 .deck-container{
-    position: absolute;
-    top: calc( 50% - 80px);
-    left: 32px;
+    /* position: absolute; */
+    /* top: calc( 50% - 80px); */
+    /* left: calc(50% - (var(--player-width) / 2) - 45px); */
+    /* left: 20px; */
     /* transform: translateY(-50%); */
+    position: relative;
+    width: calc(var(--card-width) + 12.5px);
+    height: calc(var(--card-height) + 12.5px);
+    display: flex;
+    align-items: flex-end;
+    /* align-self: flex-start */
 }
 .deck-container>.card-container{
     position: absolute;
