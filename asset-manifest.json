@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pini-app/static/css/main.ef3d7545.chunk.css",
-    "main.js": "/pini-app/static/js/main.cfffacaa.chunk.js",
-    "main.js.map": "/pini-app/static/js/main.cfffacaa.chunk.js.map",
+    "main.css": "/pini-app/static/css/main.07743e6a.chunk.css",
+    "main.js": "/pini-app/static/js/main.85f724f8.chunk.js",
+    "main.js.map": "/pini-app/static/js/main.85f724f8.chunk.js.map",
     "runtime~main.js": "/pini-app/static/js/runtime~main.08593c3f.js",
     "runtime~main.js.map": "/pini-app/static/js/runtime~main.08593c3f.js.map",
-    "static/js/2.5b20e6db.chunk.js": "/pini-app/static/js/2.5b20e6db.chunk.js",
-    "static/js/2.5b20e6db.chunk.js.map": "/pini-app/static/js/2.5b20e6db.chunk.js.map",
+    "static/js/2.5aec8140.chunk.js": "/pini-app/static/js/2.5aec8140.chunk.js",
+    "static/js/2.5aec8140.chunk.js.map": "/pini-app/static/js/2.5aec8140.chunk.js.map",
     "index.html": "/pini-app/index.html",
-    "precache-manifest.5931ea861b3f9e965837da3d6b9a2aeb.js": "/pini-app/precache-manifest.5931ea861b3f9e965837da3d6b9a2aeb.js",
+    "precache-manifest.d0c664f38124139d75b58ec9149974ec.js": "/pini-app/precache-manifest.d0c664f38124139d75b58ec9149974ec.js",
     "service-worker.js": "/pini-app/service-worker.js",
-    "static/css/main.ef3d7545.chunk.css.map": "/pini-app/static/css/main.ef3d7545.chunk.css.map"
+    "static/css/main.07743e6a.chunk.css.map": "/pini-app/static/css/main.07743e6a.chunk.css.map"
   }
 }
